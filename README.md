@@ -68,12 +68,11 @@ El sistema permite:
  Autenticación de usuarios
  Consumo de API REST
  Arquitectura desacoplada (Frontend + Backend)
-🛠️ Tecnologías utilizadas
+Tecnologías utilizadas
 Laravel 12
-Vue.js 3
+Vue.js 
 MySQL
 Axios
-Vite
 Notas
 Ejecutar primero el backend antes del frontend
 Verificar que los puertos no estén en uso
