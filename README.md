@@ -78,6 +78,5 @@ Vite
 Ejecutar primero el backend antes del frontend
 Verificar que los puertos no estén en uso
 Usar Postman para pruebas de API
-👨‍💻 Autor
 
 Manuel López
