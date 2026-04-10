@@ -1,9 +1,9 @@
-🚀 Sistema de Gestión de Lotes y Vendedores
+ Sistema de Gestión de Lotes y Vendedores
 
 Sistema web desarrollado para la administración centralizada de Lotes (Puntos de Venta) y Vendedores, implementando una arquitectura moderna con Laravel (Backend API REST) y Vue.js (Frontend).
 
-⚙️ Instalación del Proyecto
-📌 Requisitos previos
+ Instalación del Proyecto
+ Requisitos previos
 PHP >= 8.1
 Composer
 Node.js >= 18
@@ -30,10 +30,10 @@ php artisan migrate --seed
 8. Levantar servidor
 php artisan serve
 
-👉 Backend disponible en:
+ Backend disponible en:
 http://127.0.0.1:8000
 
-💻 Instalación Frontend (Vue)
+ Instalación Frontend (Vue)
 1. Entrar a la carpeta frontend
 cd frontend
 2. Instalar dependencias
@@ -41,7 +41,7 @@ npm install
 3. Ejecutar proyecto
 npm run dev
 
-👉 Frontend disponible en:
+ Frontend disponible en:
 http://localhost:5173
 
 🔗 Conexión Frontend - Backend
@@ -53,28 +53,28 @@ frontend/src/services/api.js
 Que la URL sea:
 
 const API_URL = "http://127.0.0.1:8000/api";
-📂 Estructura del Proyecto
+ Estructura del Proyecto
 Gestion-Lotes-Vendedores/
 │
 ├── backend/   → API REST en Laravel
 ├── frontend/  → Aplicación en Vue
 ├── docs/      → Documentación
-🧠 Descripción del Sistema
+ Descripción del Sistema
 
 El sistema permite:
 
-📦 Gestión de Lotes (CRUD)
-👨‍💼 Gestión de Vendedores
-🔐 Autenticación de usuarios
-🌐 Consumo de API REST
-⚡ Arquitectura desacoplada (Frontend + Backend)
+ Gestión de Lotes (CRUD)
+ Gestión de Vendedores
+ Autenticación de usuarios
+ Consumo de API REST
+ Arquitectura desacoplada (Frontend + Backend)
 🛠️ Tecnologías utilizadas
 Laravel 12
 Vue.js 3
 MySQL
 Axios
 Vite
-📌 Notas
+Notas
 Ejecutar primero el backend antes del frontend
 Verificar que los puertos no estén en uso
 Usar Postman para pruebas de API
