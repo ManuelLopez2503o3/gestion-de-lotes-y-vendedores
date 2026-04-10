@@ -1,0 +1,58 @@
+
+ 
+.dashboard-wrapper { min-height: 100vh; background-color: #f1f5f9; padding: 40px 20px; font-family: 'Inter', sans-serif; }
+.content-container { max-width: 1200px; margin: 0 auto; }
+.main-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.main-title { font-size: 2.5rem; font-weight: 800; color: #0f172a; margin: 0; }
+.subtitle { color: #64748b; font-size: 1.1rem; }
+.btn-primary { background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3); transition: 0.2s; }
+.btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); }
+.btn-refresh { background: white; border: 1px solid #e2e8f0; padding: 10px 15px; border-radius: 10px; margin-left: 10px; cursor: pointer; }
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+.lote-card { background: white; border-radius: 24px; padding: 24px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); display: flex; flex-direction: column; transition: 0.3s; }
+.lote-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+.lote-id { background: #f8fafc; color: #94a3b8; padding: 4px 10px; border-radius: 8px; font-weight: 700; font-size: 0.8rem; }
+.btn-edit-pencil { background: transparent; border: none; cursor: pointer; }
+.lote-name { font-size: 1.5rem; color: #1e293b; margin: 10px 0 0 0; font-weight: 700; }
+.lote-location { color: #64748b; margin: 5px 0 20px 0; }
+.vendedores-count { background: #eff6ff; color: #2563eb; padding: 10px; border-radius: 12px; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 20px; width: fit-content; }
+.import-panel { background: #f8fafc; padding: 15px; border-radius: 16px; margin-bottom: 20px; }
+.panel-label { font-size: 0.75rem; font-weight: 800; color: #94a3b8; text-transform: uppercase; margin-bottom: 10px; }
+.import-group { display: flex; gap: 10px; }
+.qty-input { width: 60px; padding: 8px; border-radius: 10px; border: 1px solid #e2e8f0; text-align: center; font-weight: 700; }
+.btn-import-confirm { flex: 1; background: #0f172a; color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; transition: 0.2s;}
+.btn-import-confirm:hover { background: #1e293b;}
+.btn-view-list { background: white; border: 2px solid #e2e8f0; padding: 12px; border-radius: 12px; font-weight: 700; color: #1e293b; cursor: pointer; transition: 0.2s; width: 100%;}
+.btn-view-list:hover { border-color: #2563eb; color: #2563eb; }
+.btn-delete-link { background: none; border: none; color: #94a3b8; margin-top: 15px; cursor: pointer; font-weight: 600; font-size: 0.85rem; width: 100%; text-align: center;}
+.btn-delete-link:hover { color: #ef4444; text-decoration: underline; }
+
+/* MODALES */
+.modal-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(4px); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.modal-glass { background: white; padding: 30px; border-radius: 24px; width: 90%; max-width: 450px; max-height: 80vh; display: flex; flex-direction: column; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+.modal-header { display: flex; justify-content: space-between; align-items: flex-start; }
+.modal-title { margin: 0; color: #0f172a; }
+.modal-subtitle { margin: 5px 0 0 0; color: #64748b; font-size: 0.9rem;}
+.scrollable-content { overflow-y: auto; margin-top: 15px; padding-right: 5px; }
+.vendedor-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f1f5f9; }
+.v-avatar { background: #f1f5f9; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.v-info p { margin: 0; }
+.v-username { font-weight: 700; color: #1e293b; font-size: 0.9rem; }
+.v-full-name { color: #64748b; font-size: 0.85rem; }
+.btn-remove-item { margin-left: auto; background: #fee2e2; border: none; color: #ef4444; padding: 8px; border-radius: 8px; cursor: pointer; transition: 0.2s;}
+.btn-remove-item:hover { background: #fca5a5; color: white;}
+.btn-close-x { background: #f1f5f9; border: none; font-size: 20px; border-radius: 8px; width: 30px; height: 30px; cursor: pointer; transition: 0.2s;}
+.btn-close-x:hover { background: #e2e8f0;}
+.input-label { display: block; font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 5px; margin-top: 15px;}
+.m-input { width: 100%; padding: 12px; margin: 4px 0 10px; border: 1px solid #e2e8f0; border-radius: 10px; box-sizing: border-box; }
+.btn-save { background: #2563eb; color: white; border: none; padding: 14px; border-radius: 12px; width: 100%; font-weight: 700; cursor: pointer; transition: 0.2s;}
+.btn-save:hover { background: #1d4ed8;}
+.btn-cancel { background: none; border: none; color: #64748b; width: 100%; margin-top: 10px; cursor: pointer; font-weight: 600;}
+
+.main-footer { margin-top: 50px; border-top: 1px solid #e2e8f0; padding-top: 30px; }
+.btn-logout { background: white; color: #ef4444; border: 1px solid #fee2e2; padding: 12px 24px; border-radius: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.2s;}
+.btn-logout:hover { background: #fef2f2;}
+
+.fade-in { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+ 
